@@ -9,7 +9,7 @@ const About = () => {
     <>
       <Header />
       <Banner />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
