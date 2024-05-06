@@ -10,6 +10,7 @@ import CreateProduct from "./components/createProduct/CreateProduct";
 import ManageProduct from "./components/manageProduct/ManageProduct";
 import Home from "./router/home/Home";
 import About from "./router/about/About";
+import SingleRoute from "./router/singleRoute/SingleRoute";
 
 const App = () => {
   const { data, loading } = useFetch("/products");
@@ -20,6 +21,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/singleRoute" element={<SingleRoute />} />
+
         <Route path="/admin" element={<Admin />}>
           <Route path="create_product" element={<CreateProduct />} />
           <Route path="manage_product" element={<ManageProduct />} />

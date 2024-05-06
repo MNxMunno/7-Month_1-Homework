@@ -5,11 +5,19 @@ const Admin = () => {
   return (
     <section className="admin">
       <div className="sidebar">
-        <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"create_product"}>Create Product</NavLink>
-        <NavLink to={"manage_product"}>Manage Product</NavLink>
+        <NavLink className="link" to={"/"}>
+          Home
+        </NavLink>
+        <NavLink className="link" to={"create_product"}>
+          Create Product
+        </NavLink>
+        <NavLink className="link" to={"manage_product"}>
+          Manage Product
+        </NavLink>
       </div>
-      <div className="content"></div>
+      <div className="content">
+        <div className="head"></div>
+      </div>
     </section>
   );
 };

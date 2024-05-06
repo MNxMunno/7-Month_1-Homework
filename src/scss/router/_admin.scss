@@ -1,0 +1,23 @@
+.admin {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  .sidebar {
+    background: blue;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 40px;
+    gap: 10px;
+    flex-direction: column;
+    .link {
+      padding-left: 40px;
+    }
+  }
+  .content {
+    background: #f9f;
+    .head {
+      padding: 20px 0;
+      background: #fff;
+    }
+  }
+}
