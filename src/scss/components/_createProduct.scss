@@ -1,0 +1,33 @@
+.create__product {
+  padding: 20px 0;
+  .content {
+    form {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      gap: 32px;
+      input {
+        margin: auto;
+        width: 500px;
+        outline: none;
+        padding: 10px;
+      }
+      button {
+        margin: auto;
+        width: 120px;
+        background: rgb(14, 176, 176);
+        padding: 10px 5px;
+        color: #fff;
+        border-radius: 8px;
+        font-family: sans-serif;
+        transition: 0.2s;
+        &:hover {
+          background: rgb(12, 124, 124);
+        }
+        &:active {
+          background: rgb(59, 209, 209);
+        }
+      }
+    }
+  }
+}

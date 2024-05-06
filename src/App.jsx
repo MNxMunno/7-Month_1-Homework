@@ -12,6 +12,8 @@ import Home from "./router/home/Home";
 import About from "./router/about/About";
 import SingleRoute from "./router/singleRoute/SingleRoute";
 import NotFound from "./static/notFound/NotFound";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const { data, loading } = useFetch("/products");
@@ -30,6 +32,7 @@ const App = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ToastContainer />
       {/* <Footer /> */}
     </>
   );

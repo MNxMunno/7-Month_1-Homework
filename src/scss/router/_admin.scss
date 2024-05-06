@@ -3,21 +3,37 @@
   grid-template-columns: 1fr 4fr;
   height: 100vh;
   .sidebar {
-    background: blue;
+    background: #5b5ce2;
     display: flex;
     align-items: flex-start;
     padding-top: 40px;
     gap: 10px;
     flex-direction: column;
+
     .link {
       padding-left: 40px;
-    }
-  }
-  .content {
-    background: #f9f;
-    .head {
-      padding: 20px 0;
-      background: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 16px;
+      transition: 0.2s;
+      &:hover {
+        color: #f9f;
+        svg {
+          color: #f9f;
+        }
+      }
+      &.active {
+        svg {
+          color: red;
+        }
+      }
+      svg {
+        color: #fff;
+        font-size: 24px;
+      }
     }
   }
 }

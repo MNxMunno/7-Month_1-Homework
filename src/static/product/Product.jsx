@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 
 const Product = ({ data, loading, error }) => {
-  const card = data?.map((el) => (
+  let card = data?.map((el) => (
     <div key={el.id} className="card">
       <Link to={`/products/${el.id}`}>
         <img src={el.url} alt={el.title} />
