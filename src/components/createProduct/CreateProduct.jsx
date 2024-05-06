@@ -28,6 +28,7 @@ const CreateProduct = () => {
         <div className="content">
           <form onSubmit={handleSubmit}>
             <input
+              required
               type="text"
               value={data.title}
               onChange={(e) =>
@@ -36,6 +37,7 @@ const CreateProduct = () => {
               placeholder="Title..."
             />
             <input
+              required
               type="text"
               value={data.description}
               onChange={(e) =>
@@ -44,6 +46,7 @@ const CreateProduct = () => {
               placeholder="Description"
             />
             <input
+              required
               type="number"
               value={data.price}
               onChange={(e) =>
