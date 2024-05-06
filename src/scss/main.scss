@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  &.active {
+    color: red !important;
+  }
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+@import "./components/createProduct";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/manageProduct";
+@import "./router/admin";
+@import "./router/home";
+@import "./router/singleRoute";
+@import "./static/banner";
+@import "./static/product";
