@@ -1,9 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
+import ManageProduct from "../../components/manageProduct/ManageProduct";
+import CreateProduct from "../../components/createProduct/CreateProduct";
 
 const Admin = () => {
   return (
-    <section className="admin">
+    <section className="admin-section">
       <div className="sidebar">
         <NavLink className="link" to={"/"}>
           Home
@@ -17,6 +19,10 @@ const Admin = () => {
       </div>
       <div className="content">
         <div className="head"></div>
+        <Routes>
+          <Route path="/create_product" element={<CreateProduct />} />
+          <Route path="/manage_product" element={<ManageProduct />} />
+        </Routes>
       </div>
     </section>
   );

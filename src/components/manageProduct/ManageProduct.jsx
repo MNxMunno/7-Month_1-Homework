@@ -1,7 +1,9 @@
 import React from "react";
 
 const ManageProduct = () => {
-  return <div>ManageProduct</div>;
+  return (
+    <div style={{ background: "grey", height: "94.5vh" }}>ManageProduct</div>
+  );
 };
 
 export default ManageProduct;

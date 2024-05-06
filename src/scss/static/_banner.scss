@@ -1,0 +1,44 @@
+.banner {
+  padding-top: 100px;
+  .banner__cards {
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        h1 {
+          font-family: sans-serif;
+          font-size: 32px;
+          color: #253d4e;
+        }
+        p {
+          max-width: 540px;
+          font-family: sans-serif;
+          font-size: 16px;
+          color: #253d4e;
+          padding: 40px 0;
+        }
+        a {
+          padding: 10px 15px;
+          background: #13b270;
+          font-family: sans-serif;
+          color: #fff;
+          border-radius: 8px;
+          transition: 0.2s;
+          &:hover {
+            background: #0f7149;
+          }
+          &:active {
+            background: #13b270;
+          }
+        }
+      }
+    }
+  }
+}

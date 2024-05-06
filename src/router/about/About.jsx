@@ -2,20 +2,13 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 
+import Banner from "../../static/banner/Banner";
+
 const About = () => {
   return (
     <>
       <Header />
-      <h1
-        style={{
-          paddingTop: "90px",
-          textAlign: "center",
-          color: "blue",
-          fontFamily: "sans-serif",
-        }}
-      >
-        About Us
-      </h1>
+      <Banner />
       <Footer />
     </>
   );
